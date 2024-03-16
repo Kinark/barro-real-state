@@ -1,0 +1,23 @@
+.wrapper {
+  font-size: 1.375rem;
+  user-select: none;
+  -webkit-user-drag: none;
+  text-align: center;
+
+  .value {
+    margin-top: -2px;
+    margin: -2px 4px 0px;
+  }
+
+  .button {
+    cursor: pointer;
+    color: var(--mud-color);
+    transition: transform 0.5s cubic-bezier(0.175, 1.325, 0.325, 0.985);
+    &:hover {
+      transform: scale(1.1);
+    }
+    &:active {
+      transform: scale(0.9);
+    }
+  }
+}

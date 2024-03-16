@@ -1,0 +1,30 @@
+.wrapper {
+   width: 100%;
+}
+
+.label {
+   margin-left: 12px;
+}
+
+.inputWrapper {
+  background: var(--sand-color);
+  padding: 8px 12px;
+  width: 100%;
+  textarea {
+    min-height: 125px;
+  }
+  input, textarea {
+    outline: none !important;
+    width: 100%;
+    color: var(--mud-color);
+    padding-bottom: 4px;
+    border: none;
+    background: transparent;
+    font-size: 1.1rem;
+
+    &::placeholder {
+      color: var(--mud-color);
+      opacity: 0.25;
+    }
+  }
+}

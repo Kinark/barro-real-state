@@ -1,0 +1,10 @@
+.wrapper {
+  background-color: var(--sand-color);
+  padding: 8.8px 15.4px;
+  transform: scale(0.9) rotate(0);
+  transition: transform 0.5s cubic-bezier(0.175, 1.325, 0.325, 0.985);
+
+  &:hover {
+    transform: scale(1) rotate(-4deg);
+  }
+}

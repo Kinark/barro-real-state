@@ -1,0 +1,94 @@
+.wrapper {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .dimmedBG {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .cardsWrapper {
+    width: 95%;
+    max-width: 900px;
+    pointer-events: none;
+    max-height: 90vh;
+
+    * {
+      pointer-events: all;
+    }
+
+    .contactForm {
+      background-color: var(--summer-color);
+      color: var(--sand-color);
+      padding: 16px;
+      width: 100%;
+      position: relative;
+      max-width: 350px;
+      overflow-y: auto;
+      max-height: 100%;
+    }
+
+    .card {
+      background-color: var(--sand-color);
+      padding: 24px;
+      flex: 1;
+      position: relative;
+      overflow-y: auto;
+      max-height: 100%;
+
+      p {
+         line-height: 120%;
+         margin: 0;
+         margin-bottom: 8px;
+         opacity: 0.75;
+      }
+
+      .imgSquircle {
+        font-size: 0;
+        width: 100%;
+        height: 300px;
+
+        img {
+          width: 100%;
+          height: 300px;
+          object-fit: cover;
+        }
+      }
+
+      .body {
+        padding-bottom: 16px;
+        flex: 1;
+        .title {
+          text-transform: capitalize;
+          font-size: 1.1rem;
+          line-height: 110%;
+          margin-bottom: 4px;
+          -webkit-text-stroke: 0.5px var(--mud-color);
+        }
+        .location {
+          opacity: 0.5;
+          line-height: 100%;
+        }
+        .price {
+          line-height: 100%;
+          color: var(--summer-color);
+          font-size: 1.5rem;
+          -webkit-text-stroke: 0.5px var(--summer-color);
+        }
+      }
+    }
+  }
+}

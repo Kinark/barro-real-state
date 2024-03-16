@@ -1,0 +1,20 @@
+.bigPhrase {
+  font-size: 3.5rem;
+  -webkit-text-stroke: 1px var(--mud-color);
+  margin: 0;
+  line-height: 100%;
+  padding: 16px;
+  border-radius: 32px;
+  width: 75%;
+  text-align: center;
+  text-align: left;
+  opacity: 0.2;
+  &.last {
+    align-self: flex-end;
+    text-align: right;
+  }
+}
+
+.wrapper {
+  margin: 64px 0;
+}

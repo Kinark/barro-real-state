@@ -1,0 +1,21 @@
+.wrapper {
+  width: 100%;
+  position: relative;
+  max-width: 350px;
+  .contactForm {
+    background-color: var(--summer-color);
+    color: var(--sand-color);
+    padding: 16px;
+    overflow-y: auto;
+    max-height: 100%;
+
+    h1 {
+      line-height: 100%;
+      margin: 0;
+    }
+  }
+
+  .sent {
+    text-align: center;
+  }
+}
