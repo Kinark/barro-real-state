@@ -108,7 +108,7 @@ const ContactForm = () => {
                   required
                   label="Email"
                   placeholder="email@something.com"
-                  type="text"
+                  type="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                 />
@@ -116,7 +116,7 @@ const ContactForm = () => {
                   required
                   label="Phone number"
                   placeholder="(xxx) xxx-xxxx"
-                  type="text"
+                  type="tel"
                   value={phoneNumber}
                   onChange={(e) => setPhoneNumber(e.target.value)}
                 />
