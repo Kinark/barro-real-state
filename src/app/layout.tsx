@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 
 import Hero from "~/components/Hero";
+import JoaoDeBarro from "~/components/JoaoDeBarro";
 import NestsSearcher from "~/components/NestsSearcher";
 import pepperSans from "~/assets/fonts/PeppersSansFamily/pepperSans";
 
@@ -23,6 +24,7 @@ export default function RootLayout({
         <main className="flex col center gap-3">
         <Hero />
         <NestsSearcher />
+        <JoaoDeBarro />
         {children}
         </main>
       </body>

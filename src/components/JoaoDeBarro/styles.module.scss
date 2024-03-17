@@ -1,0 +1,24 @@
+.wrapper {
+   max-width: 1000px;
+   margin: 0 auto;
+   width: 95%;
+   margin-top: 96px;
+  .picture {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+    object-fit: cover;
+  }
+
+  .title {
+    margin: 0;
+    font-size: 2rem;
+    -webkit-text-stroke: 0.5px var(--mud-color);
+  }
+
+  .description {
+    margin: 0;
+  }
+}
