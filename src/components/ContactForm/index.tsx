@@ -59,7 +59,7 @@ const ContactForm = () => {
                 layout
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
+                exit={{ opacity: 0, height: 0 }}
                 className={s.sent}
               >
                 <Lottie
@@ -97,6 +97,7 @@ const ContactForm = () => {
                   <h1>Get in touch!</h1>
                 </div>
                 <Input
+                  required
                   label="Name"
                   placeholder="Your name"
                   type="text"
@@ -104,6 +105,7 @@ const ContactForm = () => {
                   onChange={(e) => setFullName(e.target.value)}
                 />
                 <Input
+                  required
                   label="Email"
                   placeholder="email@something.com"
                   type="text"
@@ -111,6 +113,7 @@ const ContactForm = () => {
                   onChange={(e) => setEmail(e.target.value)}
                 />
                 <Input
+                  required
                   label="Phone number"
                   placeholder="(xxx) xxx-xxxx"
                   type="text"
@@ -118,6 +121,7 @@ const ContactForm = () => {
                   onChange={(e) => setPhoneNumber(e.target.value)}
                 />
                 <TextArea
+                  required
                   label="Message"
                   placeholder="Pew pew! Pew poo pew?"
                   value={comments}
