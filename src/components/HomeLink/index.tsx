@@ -65,7 +65,6 @@ const HomeLink = ({ home, style }: HomeLinkProps) => (
         </Squircle>
         <div className={cs(s.body, "flex col left")}>
           <div className={s.title}>{fixForBirds(home.Title.toLowerCase())}</div>
-          <div className={s.location}>{home.Location}</div>
           <div className="flex center gap-1">
             <div className="flex center gap-1-half">
               <Image src={bedIcon} width={22} height={22} alt="Bed icon" />
