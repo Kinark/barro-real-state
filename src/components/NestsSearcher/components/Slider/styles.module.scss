@@ -22,4 +22,14 @@
     background-color: var(--mud-color);
     cursor: pointer;
   }
+
+  /* I had to repeat this code because using a comma in the rule above was breaking SASS compiler idk why */
+  &::-moz-slider-thumb {
+    appearance: none;
+    width: 20px;
+    border-radius: 50%;
+    height: 20px;
+    background-color: var(--mud-color);
+    cursor: pointer;
+  }
 }
