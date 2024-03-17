@@ -9,6 +9,7 @@ interface CommonInputProps {
   label: string;
   placeholder: string;
   value: string;
+  required?: boolean;
 }
 
 interface InputProps extends CommonInputProps {
@@ -16,7 +17,14 @@ interface InputProps extends CommonInputProps {
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
-const Input = ({ label, placeholder, type, value, onChange }: InputProps) => {
+const Input = ({
+  label,
+  placeholder,
+  type,
+  value,
+  required = false,
+  onChange,
+}: InputProps) => {
   return (
     <div className={s.wrapper}>
       <div className={s.label}>{label}</div>
@@ -26,6 +34,7 @@ const Input = ({ label, placeholder, type, value, onChange }: InputProps) => {
         className={cs(s.inputWrapper, "flex col left")}
       >
         <input
+          required={required}
           className={pepperSans.className}
           type={type}
           placeholder={placeholder}
@@ -43,6 +52,7 @@ interface TextAreaProps extends CommonInputProps {
 
 export const TextArea = ({
   label,
+  required = false,
   placeholder,
   value,
   onChange,
@@ -56,6 +66,7 @@ export const TextArea = ({
         className={cs(s.inputWrapper, "flex col left")}
       >
         <textarea
+          required={required}
           className={pepperSans.className}
           placeholder={placeholder}
           value={value}
