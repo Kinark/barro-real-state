@@ -4,7 +4,7 @@ This is a beautiful and cute real state agency for birds called "Barro real stat
 
 You can access a live deployment of the site [here https://barro-real-state.vercel.app/](https://barro-real-state.vercel.app/).
 
-The app isn't reponsive tho, it only works on large screen as of now.
+The app isn't reponsive though, it only works on large screen as of now.
 
 ## Getting Started
 
